@@ -1,0 +1,6 @@
+<html>
+	<body>
+		<canvas id='board' width='400px' height='512px'>
+		</canvas>	
+	</body>
+</html>

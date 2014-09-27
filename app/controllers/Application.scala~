@@ -12,6 +12,6 @@ object Application extends Controller {
 
 	def board(fen: String) = Action {
 		if(fen == null) Ok(views.html.board(fen_init))
-		else Ok(views.html.board(fen))
+		else Ok(views.html.board(s"$fen"))
 	}
 }
