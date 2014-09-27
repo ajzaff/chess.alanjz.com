@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/chess
+web: ./activator "run 5000"
