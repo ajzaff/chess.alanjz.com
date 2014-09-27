@@ -1,1 +1,1 @@
-web: ./activator "run 5000"
+web: ./activator run -Dhttp.port=$PORT $PLAY_OPTS

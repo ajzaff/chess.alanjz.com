@@ -1,1 +1,1 @@
-web: 
+web: ./activator run "port=$PORT" $PLAY_OPTS
