@@ -1,4 +1,56 @@
 body {
+	background: linear-gradient(skyblue,floralwhite,white) no-repeat 0% 0%;
+	font-family: sans-serif;
+	margin: 0px;
+}
+.hidden {
+	display: none;
+}
+div#front_page {
+	margin: 0px;
+	padding: 0px;
+	padding: 160px 0px;
+}
+div#board_page {
+	text-align: center;
+	margin: 0px;
+	padding: 60px 0px;
+}
+h1#title {
+	font-size: 500%;
+	font-weight: lighter;
+	line-height: 60%;
+}
+h4#subtitle {
+	font-size: 120%;
+	font-weight: lighter;
+}
+div#header {
+	text-align: center;
+}
+div#about {
+	font-weight: lighter;
+	text-align: center;
+}
+input#board_key {
+	font-weight: normal !important;
+	display: inline-block;
+	padding: 14px;
+	margin: 10px 20px 10px 0px;
+	font-size: 140%;
+	border: 1px solid royalblue;
+	border-radius: 17px 17px;
+	width: 400px;
+}
+a.big_link {
+	font-weight: normal !important;
+	display: inline-block;
+	padding: 17px;
+	margin: 10px 20px 10px 0px;
+	font-size: 120%;
+	border: 1px solid royalblue;
+	border-radius: 4px 4px;
+	background-color: #168ADD;
 	color: white;
-	background: black;
+	cursor: pointer;
 }

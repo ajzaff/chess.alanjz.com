@@ -54,12 +54,42 @@ function board_position(board, fen) {
 		image.src = piece
 	}
 
+	/*var consumeToken = function() {
+		piece_image = null
+		var c = fen.charAt(0)
+		if(c == 'P') piece_image = '♙'
+		else if(c == 'N') piece_image = '♘'
+		else if(c == 'B') piece_image = '♗'
+		else if(c == 'R') piece_image = '♖'
+		else if(c == 'Q') piece_image = '♕'
+		else if(c == 'K') piece_image = '♔'
+		else if(c == 'p') piece_image = '♟'
+		else if(c == 'n') piece_image = '♞'
+		else if(c == 'b') piece_image = '♝'
+		else if(c == 'r') piece_image = '♜'
+		else if(c == 'q') piece_image = '♛'
+		else if(c == 'k') piece_image = '♚'
+		if(isNumeric(c)) { // empty handler
+			var num = parseInt(c)
+			if(num > 1) fen = "" + (num-1) + fen.substring(1)
+			else fen = fen.substring(1)
+		}
+		else fen = fen.substring(1)	// default handling
+		if(fen.charAt(0) == '/') fen = fen.substring(1)
+		return piece_image
+	}*/
+
 	var row,col // (0,0) is A8
 	for(col=0; col < 8; col++)
 		for(row=0; row < 8; row++) {
 			ctx.fillStyle = fillStyle(row,col)
 			ctx.fillRect(row*squareSize,col*squareSize,squareSize,squareSize)
 			piece = consumeToken()
+			/*if(piece != null) {
+				ctx.fillStyle = 'black';
+				ctx.font = '80px verdana'
+				ctx.fillText(piece,row*squareSize,col*squareSize+57,squareSize);
+			}*/
 			if(piece != null) new ImagePromise(piece,row,col)
 		}
 }

@@ -46,7 +46,7 @@
 			<p>Magnus Carlson 2882</p>
 			<canvas id='board' width=512 height=512>
 			</canvas>
-			<p>Inov Svidler 2766</p>
+			<b>Inov Svidler 2766</b>
 			<a id='adjourn' class='big_link'>Adjourn</a>
 		</div>
 	</body>
